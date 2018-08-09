@@ -1,3 +1,7 @@
+main > .section{
+  background: #222;
+}
+
 main .navbar {
   min-height: 80px;
 }
@@ -7,7 +11,7 @@ main .navbar {
 }
 
 main .title {
-  color: #444;
+  color: #ddd;
 }
 
 .hidden {
@@ -27,3 +31,8 @@ div .notification {
   margin-left: 0.25em;
   margin-right: 0.25em;
 }
+
+@media screen and (max-width:480px){
+.level{
+  width: max-content;
+}}
