@@ -79,7 +79,9 @@ export default {
       let bits = this.bits.split("\n").filter(entry => entry !== "");
       let pieces = this.pieces.split("\n").filter(entry => entry !== "");
 
-      this.bits_and_pieces = `${bits[this.random(bits.length)]} ${pieces[this.random(pieces.length)]}`;
+      this.bits_and_pieces = `${bits[this.random(bits.length)]} ${
+        pieces[this.random(pieces.length)]
+      }`;
     },
     swap() {
       const bits = this.bits;
@@ -87,8 +89,6 @@ export default {
 
       this.pieces = bits;
       this.bits = pieces;
-      localStorage.setItem("descriptorBits", pieces);
-      localStorage.setItem("descriptorPieces", bits);
     }
   }
 };
