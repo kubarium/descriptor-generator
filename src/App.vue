@@ -1,5 +1,4 @@
 <template>
-
   <main id="app">
     <div class="section">
       <h1 class="title is-4 has-text-centered">Descriptor Generator</h1>
@@ -23,7 +22,7 @@
             <div class="level">
               <div class="level-left">
                 <button class="button is-info is-fullwidth" @click="swap">
-                  Swap Bits&Pieces
+                  Swap Bits & Pieces
                 </button>
               </div>
               <div class="level-right">
@@ -98,14 +97,6 @@ export default {
 <style lang="scss">
 main > .section {
   background: #222;
-}
-
-main .navbar {
-  min-height: 80px;
-}
-
-.navbar .navbar-brand {
-  align-items: center;
 }
 
 main .title {
